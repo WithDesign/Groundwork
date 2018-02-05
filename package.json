@@ -1,7 +1,7 @@
 {
-  "name": "withdesign",
-  "description": "Withdesign - Zeek Starter Theme ===",
-  "version": "2.0.3",
+  "name": "Groundwork Wordpress Theme Boilerplate",
+  "description": "",
+  "version": "1.0.0",
   "main": "gulpfile.js",
   "scripts": {
     "dev": "gulp serve",
@@ -10,16 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ZeekInteractive/withdesign"
+    "url": "https://github.com/WithDesign/groundwork-wordpress"
   },
-  "author": "Zeek Interactive",
-  "license": "ISC",
+  "author": "With Design",
   "bugs": {
-    "url": "https://github.com/ZeekInteractive/withdesign/issues"
+    "url": "https://github.com/WithDesign/groundwork-wordpress/issues"
   },
-  "homepage": "https://github.com/ZeekInteractive/withdesign",
+  "homepage": "https://groundwork.withdesign.ca",
   "dependencies": {
-    "foundation-sites": "6.3.1",
     "sassdash": "^0.8.2"
   },
   "devDependencies": {
