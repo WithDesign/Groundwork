@@ -1,0 +1,43 @@
+////
+/// Footer
+////
+
+.footer {
+  box-sizing: border-box;
+  min-height: 15vh;
+  margin-top: 50px;
+  padding: 15px 0;
+  background-color: color(greyscale, grey-90);
+  color: color(greyscale, grey-50);
+
+  @include breakpoint(sm) {
+    padding: 25px 0;
+  }
+
+  a {
+    color: color(greyscale, grey-50);
+    @include font-size(14px);
+
+    &:hover {
+      color: color(greyscale, grey-40);
+    }
+  }
+
+  h6 {
+    margin: 15px 0 10px;
+
+    @include breakpoint(sm) {
+      margin: 0 0 15px;
+    }
+  }
+
+  li {
+    margin: 10px;
+  }
+
+  ul {
+    @extend .list-inline;
+    margin: 0;
+    padding: 0;
+  }
+}

@@ -20,11 +20,10 @@ var gulp = require( 'gulp' ),
 ////////////////////////////////////////////////////////////////////////////////
 
 var paths = {
-  sassPath: 'assets/sass/',
+  sassPath: 'assets/scss/',
   nodePath: 'node_modules/',
   jsPath: 'assets/js/concat',
   destPath: '_dist/',
-  foundationJSpath: 'node_modules/foundation-sites/js/',
   imgPath: 'assets/img/'
 };
 
@@ -156,46 +155,6 @@ gulp.task('login-css', function() {
 
 gulp.task('js', function() {
   return gulp.src([
-
-    /* Choose what JS Plugin you'd like to use. Note that some plugins also
-    require specific utility libraries that ship with Foundation—refer to a
-    plugin's documentation to find out which plugins require what, and see
-    the Foundation's JavaScript page for more information.
-    http://foundation.zurb.com/sites/docs/javascript.html */
-
-    // // Core Foundation - needed when choosing plugins ala carte
-    // paths.foundationJSpath + 'foundation.core.js',
-    // paths.foundationJSpath + 'foundation.util.mediaQuery.js',
-    //
-    // // Choose the individual plugins you want in your project
-    // paths.foundationJSpath + 'foundation.abide.js',
-    // paths.foundationJSpath + 'foundation.accordion.js',
-    // paths.foundationJSpath + 'foundation.accordionMenu.js',
-    // paths.foundationJSpath + 'foundation.drilldown.js',
-    // paths.foundationJSpath + 'foundation.dropdown.js',
-    // paths.foundationJSpath + 'foundation.dropdownMenu.js',
-    // paths.foundationJSpath + 'foundation.equalizer.js',
-    // paths.foundationJSpath + 'foundation.interchange.js',
-    // paths.foundationJSpath + 'foundation.magellan.js',
-    // paths.foundationJSpath + 'foundation.offcanvas.js',
-    // paths.foundationJSpath + 'foundation.orbit.js',
-    // paths.foundationJSpath + 'foundation.responsiveMenu.js',
-    // paths.foundationJSpath + 'foundation.responsiveToggle.js',
-    // paths.foundationJSpath + 'foundation.reveal.js',
-    // paths.foundationJSpath + 'foundation.slider.js',
-    // paths.foundationJSpath + 'foundation.sticky.js',
-    // paths.foundationJSpath + 'foundation.tabs.js',
-    // paths.foundationJSpath + 'foundation.toggler.js',
-    // paths.foundationJSpath + 'foundation.tooltip.js',
-    // paths.foundationJSpath + 'foundation.util.box.js',
-    // paths.foundationJSpath + 'foundation.util.keyboard.js',
-    // paths.foundationJSpath + 'foundation.util.motion.js',
-    // paths.foundationJSpath + 'foundation.util.nest.js',
-    // paths.foundationJSpath + 'foundation.util.timerAndImageLoader.js',
-    // paths.foundationJSpath + 'foundation.util.touch.js',
-    // paths.foundationJSpath + 'foundation.util.triggers.js',
-    // paths.foundationJSpath + 'foundation.zf.responsiveAccordionTabs.js',
-
     // Babel polyfill
     paths.nodePath + 'babel-polyfill/dist/polyfill.min.js',
         // Our custom JS

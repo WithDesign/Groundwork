@@ -1,0 +1,26 @@
+.site-main {
+  min-height: 70vh;
+}
+
+body {
+  animation: fadeInUp .75s forwards ease-in-out;
+  overflow-x: hidden;
+}
+
+
+.btn {
+  border-radius: 4px;
+}
+
+////
+/// Keyframes
+////
+
+@include create-keyframe(fadeInUp);
+@include create-keyframe(fadeInDown);
+@include create-keyframe(fadeInRight);
+@include create-keyframe(fadeOutRight);
+
+////
+/// Extend Placeholders
+////

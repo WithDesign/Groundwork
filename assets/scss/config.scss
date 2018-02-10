@@ -1,0 +1,145 @@
+
+////
+/// Global User Settings
+////
+
+$user-defined-settings: (
+  theme: (
+    default: false
+  ),
+  debug: (
+    framework: (
+      components: (
+        plugins: true,
+        template: true
+      ),
+      infra: (
+        components: true,
+        root: true,
+        typography: true,
+        builder: true
+      ),
+      util: (
+        class-creators: true,
+        tools: true
+      ),
+    ),
+  ),
+  infra: (
+    shadow-active: false,
+    tables: default responsive,
+    box-modal: default,
+    box-modal-values: (5, 10, 15, 20),
+    display: default,
+    button-create: true,
+    default-buttons-active: true,
+    form-group-default: false,
+    form-group-fancy: false,
+    color-classes: true,
+  ),
+  grid: (
+    masonry-import: false,
+    ie-fallback: false
+  ),
+  plugins: (
+    accordion: (
+      active: false
+    ),
+    modal: (
+      active: false
+    ),
+    preloader: (
+      active: false,
+    ),
+    slider: (
+      active: false,
+    ),
+    progress-bar: (
+      active: false,
+    ),
+  ),
+  z-index: (
+    header: 100000,
+  ),
+  typography: (
+    default-font-size: 16px,
+    default-line-height: 14px,
+    baseline: 24px,
+    plugin: (
+      font-awesome: (
+        active: true,
+        fa-base-font-size: 14px,
+        fa-spinning-animation: true,
+      )
+    )
+  ),
+  colors: (
+    brand: (
+      primary: #f58220,
+      secondary: #0085a9,
+      extra: #22292c,
+      support: #0275d8,
+      default: #5bc0de,
+      success: #2ecb5b,
+      warning: #f5e820,
+      info: #0085a9,
+      danger: #f53920
+    ),
+    greyscale: (
+      grey-0: darken(#727b80, 50%),
+      grey-10: darken(#727b80, 40%), // brand-extra
+      grey-20: darken(#727b80, 30%),
+      grey-30: darken(#727b80, 20%), // dark-grey
+      grey-40: darken(#727b80, 10%),
+      grey-50: #727b80, // grey
+      grey-60: lighten(#727b80, 10%),
+      grey-70: lighten(#727b80, 20%),
+      grey-80: lighten(#727b80, 30%),
+      grey-90: lighten(#727b80, 40%), // light-grey
+      grey-100: lighten(#727b80, 50%),
+      'black': #22292c,
+      dark-grey: darken(#727b80, 20%),
+      grey: #727b80,
+      light-grey: lighten(#727b80, 40%)
+    ),
+    link: (
+      link: #0085a9,
+      link-secondary: darken(#0085a9, 15%),
+    ),
+    extras: (
+      blue-grey: #727b80,
+      dark-blue-grey: #333d42,
+      body-bg-color: lighten(#727b80, 45%),
+    )
+  ),
+  shadow: (
+    types: (
+      light: (
+        1: '0 2px 4px #{rgba(#0085a9, 0.1)}',
+        2: '0 7px 14px #{rgba(#0085a9, 0.1)}, 0 3px 6px rgba(0, 0, 0, 0.08)',
+        3: '0 15px 35px #{rgba(#0085a9, 0.1)}, 0 5px 15px rgba(0, 0, 0, 0.07)',
+        4: '0 20px 35px #{rgba(#0085a9, 0.1)}, 0 8px 15px rgba(0, 0, 0, 0.07)',
+        5: '0 25px 40px #{rgba(#0085a9, 0.2)}, 0 8px 15px rgba(0, 0, 0, 0.1)'
+      ),
+      cta: (
+        1: '0 15px 30px #{rgba(#2ecb5b, 0.1)}, 8px 15px rgba(0, 0, 0, 0.08)',
+      )
+    )
+  ),
+  buttons: (
+    types: (
+      dismiss: (
+        background: greyscale grey-70,
+        padding: 10px 25px,
+        border: 0,
+        border-radius: 0,
+        color-border: greyscale grey-60,
+        color: greyscale white,
+        shadow: none,
+        hover-border: 0,
+        hover-color: greyscale grey-100,
+        hover-shadow: none
+      )
+    )
+  )
+);
