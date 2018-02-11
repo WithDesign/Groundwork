@@ -10,52 +10,52 @@ $user-defined-settings: (
   debug: (
     framework: (
       components: (
-        plugins: true,
-        template: true
+        plugins: false,
+        template: false
       ),
       infra: (
-        components: true,
-        root: true,
-        typography: true,
-        builder: true
+        components: false,
+        root: false,
+        typography: false,
+        builder: false
       ),
       util: (
-        class-creators: true,
-        tools: true
+        class-creators: false,
+        tools: false
       ),
     ),
   ),
   infra: (
-    shadow-active: false,
+    shadow-active: true,
     tables: default responsive,
     box-modal: default,
     box-modal-values: (5, 10, 15, 20),
     display: default,
     button-create: true,
     default-buttons-active: true,
-    form-group-default: false,
-    form-group-fancy: false,
+    form-group-default: true,
+    form-group-fancy: true,
     color-classes: true,
   ),
   grid: (
-    masonry-import: false,
-    ie-fallback: false
+    masonry-import: true,
+    ie-fallback: true
   ),
   plugins: (
     accordion: (
-      active: false
+      active: true
     ),
     modal: (
-      active: false
+      active: true
     ),
     preloader: (
-      active: false,
+      active: true,
     ),
     slider: (
-      active: false,
+      active: true,
     ),
     progress-bar: (
-      active: false,
+      active: true,
     ),
   ),
   z-index: (
@@ -99,7 +99,7 @@ $user-defined-settings: (
       grey-100: lighten(#727b80, 50%),
       'black': #22292c,
       dark-grey: darken(#727b80, 20%),
-      grey: #727b80,
+      'grey': #727b80,
       light-grey: lighten(#727b80, 40%)
     ),
     link: (
@@ -134,7 +134,7 @@ $user-defined-settings: (
         border: 0,
         border-radius: 0,
         color-border: greyscale grey-60,
-        color: greyscale white,
+        color: greyscale 'white',
         shadow: none,
         hover-border: 0,
         hover-color: greyscale grey-100,

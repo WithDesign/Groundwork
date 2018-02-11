@@ -155,7 +155,7 @@
       text-align: center;
       // opacity: 0.8;
       font-weight: 700;
-      color: color(greyscale, white);
+      color: color(greyscale, 'white');
       // mix-blend-mode: overlay;
       @include font-size(84px);
 
@@ -176,7 +176,7 @@
   width: 100%;
   text-align: center;
   bottom: 15px;
-  color: rgba(color(greyscale, grey), 0.6);
+  color: rgba(color(greyscale, 'grey'), 0.6);
   font-weight: 600;
   @include font-size(14px);
 
@@ -195,7 +195,7 @@
 @include keyframes(moreButton) {
   0% {
     height: 0;
-    background-color: color(greyscale, grey);
+    background-color: color(greyscale, 'grey');
   }
   100% {
     height: 40px;

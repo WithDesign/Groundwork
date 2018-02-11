@@ -1,12 +1,11 @@
 $enable-theme: false;
 $enable-admin: false;
 $stylesheet-name: Groundwork;
-$show-build-logs:  true;
+$show-build-logs:  false;
 
 @import './../../node_modules/groundwork-ui/scss/api'; // Includes api, utilities, and config
 @import 'config'; // Main config
 @import './../../node_modules/groundwork-ui/scss/main'; // Pulls in fraework to compile to correct settings
-
 @import 'global';
 @import 'components/components';
 @import 'pages/pages';

@@ -39,7 +39,7 @@
 
   .navigation-toggle {
     display: inline-block;
-    color: color(greyscale, white);
+    color: color(greyscale, 'white');
     @extend .pull-right;
 
     @include breakpoint(sm) {
@@ -114,7 +114,7 @@
       a {
         padding: 10px 15px;
         font-weight: 600;
-        color: color(greyscale, white);
+        color: color(greyscale, 'white');
 
         @include breakpoint(max-width breakpoint-value(sm)) {
           box-sizing: border-box;
@@ -124,14 +124,14 @@
     }
 
     .btn-signin {
-      border: 2px solid color(greyscale, white) {
+      border: 2px solid color(greyscale, 'white') {
         radius: 4px;
       }
-      color: color(greyscale, white);
+      color: color(greyscale, 'white');
     }
 
     .btn-signup {
-      color: color(greyscale, white);
+      color: color(greyscale, 'white');
       background-color: color(brand, info);
       border: 2px solid color(brand, info) {
         radius: 4px;
